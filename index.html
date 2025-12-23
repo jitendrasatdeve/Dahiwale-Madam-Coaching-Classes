@@ -20,7 +20,6 @@
         /* Define custom colors and transitions */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f9fd; /* Light background */
             transition: background-color 0.3s, color 0.3s;
         }
         /* Dark mode body background */
@@ -296,25 +295,65 @@
             </div>
         </section>
 
-        <!-- Contact & CTA Section -->
+        <!-- Contact & Location Section -->
         <section id="contact" class="py-16 md:py-24 bg-primary text-white">
-            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-4xl font-extrabold mb-4">Ready to <span class="text-accent dark:text-pink-400">Begin Your Journey?</span></h2>
-                <p class="text-xl mb-8 opacity-90">
-                    Enrollment for the next batch is now open. Seats are limited for personalized attention.
-                </p>
-
-                <form class="space-y-4 bg-white dark:bg-gray-700 p-8 rounded-xl shadow-2xl">
-                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:ring-accent focus:border-accent" required>
-                    <input type="email" placeholder="Email Address" class="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:ring-accent focus:border-accent" required>
-                    <input type="tel" placeholder="Phone Number" class="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:ring-accent focus:border-accent" required>
-                    <textarea placeholder="Your Query (e.g., JNVST Class VI details)" rows="4" class="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:ring-accent focus:border-accent" required></textarea>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12">Visit Us & <span class="text-accent dark:text-pink-400">Enroll Today</span></h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     
-                    <button type="submit" class="w-full bg-accent text-white text-lg font-bold py-3 rounded-lg hover:bg-pink-600 transition duration-300 transform hover:shadow-xl">
-                        Send Enrollment Request
-                    </button>
-                </form>
+                    <!-- Left Column: Enrollment Form -->
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6 text-white dark:text-gray-100">Send Enrollment Request</h3>
+                        <form class="space-y-4 bg-white dark:bg-gray-700 p-8 rounded-xl shadow-2xl">
+                            <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:ring-accent focus:border-accent" required>
+                            <input type="email" placeholder="Email Address" class="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:ring-accent focus:border-accent" required>
+                            <input type="tel" placeholder="Phone Number" class="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:ring-accent focus:border-accent" required>
+                            <textarea placeholder="Your Query (e.g., JNVST Class VI details)" rows="4" class="w-full p-3 rounded-lg border border-gray-300 dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:ring-accent focus:border-accent" required></textarea>
+                            
+                            <button type="submit" class="w-full bg-accent text-white text-lg font-bold py-3 rounded-lg hover:bg-pink-600 transition duration-300 transform hover:shadow-xl">
+                                Send Enrollment Request
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Right Column: Address and Directions -->
+                    <div class="space-y-8">
+                        
+                        <!-- Location Card -->
+                        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-2xl text-primary dark:text-gray-200">
+                            <h3 class="text-3xl font-bold text-accent dark:text-pink-400 mb-4">Our Coaching Location</h3>
+                            
+                            <div class="flex items-start space-x-4 mb-6">
+                                <!-- Icon for Location -->
+                                <svg class="w-6 h-6 text-primary dark:text-indigo-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                
+                                <div>
+                                    <p class="font-semibold text-xl text-primary dark:text-indigo-400">Address:</p>
+                                    <address class="not-italic text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+                                        Dahiwale Madam Coaching Classes,<br>
+                                        Near Old Bus Stand,<br>
+                                        **Tirora**, Dist. Gondia,<br>
+                                        Maharashtra - 441911
+                                    </address>
+                                </div>
+                            </div>
 
+                            <a href="https://maps.google.com/maps?q=Dahiwale+Madam+Coaching+Classes+Tirora" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full bg-accent text-white text-lg font-bold py-3 px-6 rounded-lg hover:bg-pink-600 transition duration-300 transform hover:shadow-xl">
+                                Get Directions (Google Maps)
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243m10.606-10.606l-4.243 4.243m0 0l-4.243-4.243m4.243 4.243V3"></path></svg>
+                            </a>
+                        </div>
+                        
+                        <!-- Simple Contact Info -->
+                        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-2xl text-primary dark:text-gray-200">
+                            <h3 class="text-3xl font-bold text-primary dark:text-indigo-400 mb-4">Quick Contact</h3>
+                            <p class="mb-3 text-lg"><strong>Phone:</strong> <a href="tel:+919876543210" class="text-accent dark:text-pink-400 hover:underline font-semibold">+91 98765 43210</a></p>
+                            <p class="text-lg"><strong>Email:</strong> <a href="mailto:info@dahiwalecoaching.com" class="text-accent dark:text-pink-400 hover:underline font-semibold">info@dahiwalecoaching.com</a></p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -342,15 +381,15 @@
         function setDarkMode() {
             htmlElement.classList.add('dark');
             localStorage.setItem(localStorageThemeKey, 'dark');
-            darkIcon.classList.remove('hidden');
-            lightIcon.classList.add('hidden');
+            if (darkIcon) darkIcon.classList.remove('hidden');
+            if (lightIcon) lightIcon.classList.add('hidden');
         }
 
         function setLightMode() {
             htmlElement.classList.remove('dark');
             localStorage.setItem(localStorageThemeKey, 'light');
-            lightIcon.classList.remove('hidden');
-            darkIcon.classList.add('hidden');
+            if (lightIcon) lightIcon.classList.remove('hidden');
+            if (darkIcon) darkIcon.classList.add('hidden');
         }
 
         // 2. Initial Load & Setup
@@ -381,7 +420,9 @@
             checkThemePreference();
 
             // 4. Attach Event Listener
-            toggleButton.addEventListener('click', toggleTheme);
+            if (toggleButton) {
+                toggleButton.addEventListener('click', toggleTheme);
+            }
         }
         
         // --- Mobile Menu Toggle Logic (Existing) ---
